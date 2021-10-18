@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+-->
+    <title>Bicicleteria Reto2</title>
+    <!--<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">-->
+    <script src="script.js" type="text/javascript" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="styles.css" rel="stylesheet" />
+
+</head>
+
+
+
+<body>
+
+    <h1 class="center">Reto 2</h1>
+
+    <h2 class="center">Bicicleta</h2>
+
+
+    <div class="bici-style2">
+        <button onclick="getClientsBikes()">Consultar </button>
+        <button onclick="formRegistroBikes()">Registar </button>
+    </div>
+
+    <div id="resultado_bicileta" class="bici-style2" style="display: none;">
+    </div>
+
+    </div>
+
+    <div class="bici-style" id="tabla_actualizar_bike">
+        <input type="number" id="idac" placeholder="id" readonly>
+        <input type="text" id="brandac" placeholder="brand">
+        <input type="number" id="modelac" placeholder="model">
+        <input type="number" id="category_idac" placeholder="category_id">
+        <input type="text" id="nameac" placeholder="name">
+
+        <button onclick="actualizarClientsBikes()">Actualizar </button>
+    </div>
+
+    <div class="bici-style2" id="tabla_registrar_bike">
+        <input type="number" id="idrgb" placeholder="id">
+        <input type="text" id="brandrgb" placeholder="brand">
+        <input type="number" id="modelrgb" placeholder="model">
+        <input type="number" id="category_idrgb" placeholder="category_id">
+        <input type="text" id="namergb" placeholder="name">
+
+        <br>
+        <button onclick="guardarClientsBikes()">Guardar </button>
+    </div>
+
+
+
+<!-- -------------------------------------------------------------------------------------------------------------------------->
+
+
+    <h2 class="center">Clientes</h2>
+
+    <div class="bici-style2">
+        <button onclick="getClients()">Consultar </button>
+        <button onclick="formRegistro()">Registar </button>
+    </div>
+
+    <div id="resultado" class="bici-style2" style="display: none;">
+    </div>
+
+    </div>
+
+    <div class="bici-style" id="tabla_actualizar">
+        <input type="number" id="id" placeholder="id" readonly>
+        <input type="text" id="name" placeholder="name">
+        <input type="text" id="email" placeholder="email">
+        <input type="number" id="age" placeholder="age">
+
+        <button onclick="actualizarClients()">Actualizar </button>
+    </div>
+
+    <div class="bici-style2" id="tabla_registrar">
+        <input type="number" id="idrg" placeholder="id" >
+        <input type="text" id="namerg" placeholder="name">
+        <input type="text" id="emailrg" placeholder="email">
+        <input type="number" id="agerg" placeholder="age">
+        <br>
+        <button onclick="guardarClients()">Guardar </button>
+    </div>
+
+
+
+
+
+
+
+
+    <h2 class="center">Mensajes</h2>
+
+
+
+    <div class="bici-style2">
+        <button onclick="getClientsMensajes()">Consultar </button>
+        <button onclick="formRegistroMensajes()">Registar </button>
+    </div>
+
+    <div id="resultado_Mensajes" class="bici-style2" style="display: none;">
+    </div>
+
+    </div>
+
+    <div class="bici-style" id="tabla_actualizar_Mensajes">
+        <input type="number" id="idacm" placeholder="id" readonly>
+        <input type="text" id="messagetextacm" placeholder="name">
+     
+
+        <button onclick="actualizarClientsMensajes()">Actualizar </button>
+    </div>
+
+    <div class="bici-style2" id="tabla_registrar_Mensajes">
+        <input type="number" id="idrgm" placeholder="id" >
+        <input type="text" id="messagetextrgm" placeholder="name">
+        <br>
+        <button onclick="guardarClientsMensajes()">Guardar </button>
+    </div>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
